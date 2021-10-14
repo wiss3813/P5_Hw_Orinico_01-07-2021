@@ -1,12 +1,20 @@
 html {
   margin: 10px;
+  background-color: rgb(223, 207, 185);
+
 }
 body {
   padding: 0%;
   margin: 25px;
+
+}
+main {
+ 
 }
 .containeur {
   margin: 15px;
+}
+.header{
   background-color: #e1bb80;
   border-radius: 10px;
 }
@@ -19,9 +27,49 @@ body {
 margin-left: 10px;
 }
 .fa-shopping-cart {
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   font-size: 30px;
 }
 a {
   text-decoration: none;
+}
+h1{
+  font-family: "MV Boli";
+  color: black;
+  font-weight: lighter;
+}
+h2 {
+display: flex;
+justify-content: center;
+margin-top: 2rem;
+font-weight: bolder;
+font-size: 45px;
+font-family: "MV Boli";
+text-shadow: coral;
+background-color: rgb(110, 69, 7);
+}
+img {
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  
+}
+.products-containeur{
+justify-content: center;
+align-items: center;
+}
+.products{
+  grid-template-columns:  1fr 1fr;
+  display: grid;
+  row-gap: 5%;
+  column-gap: 5%;
+}
+.product__infos__title{
+  background-color:  #6e4729;
+  border-top-right-radius: 2px; border-top-left-radius: 2px;
+}
+.product__infos__price{
+  background-color:  #6e4729;
+  border-radius: 1px;
+  border-bottom-right-radius: 2px; border-bottom-left-radius: 2px;
 }
