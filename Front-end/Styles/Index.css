@@ -60,16 +60,22 @@ align-items: center;
 }
 .products{
   grid-template-columns:  1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   display: grid;
   row-gap: 5%;
   column-gap: 5%;
 }
 .product__infos__title{
-  background-color:  #6e4729;
-  border-top-right-radius: 2px; border-top-left-radius: 2px;
+font-family: "MV Boli";
 }
 .product__infos__price{
-  background-color:  #6e4729;
-  border-radius: 1px;
-  border-bottom-right-radius: 2px; border-bottom-left-radius: 2px;
+ font-family: "MV Boli";
+}
+.product__infos{
+  height: 50px;
+  color: black;
+  background-color: #724b15;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
 }
