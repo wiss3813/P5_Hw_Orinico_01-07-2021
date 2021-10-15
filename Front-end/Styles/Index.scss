@@ -1,7 +1,7 @@
 $primary-color: #352208;
 $secondary-color: #e1bb80;
 $tertiary-color: #7b6b43;
-$text-color: #dee9f7;
+$text-color: #000000;
 
 @mixin flex-center() {
   display: flex;
@@ -85,7 +85,7 @@ h1 {
 .teddy-bear {
   max-width: 700px;
   &__bg {
-    background-image: url("/front-end/src/img/teddy-bear-wallpaper.jpg");
+    background-image: url("/Front-end/Src/img/teddy-bear-wallpaper.jpg");
     background-size: cover;
     height: 50vh;
     @include flex-center;
