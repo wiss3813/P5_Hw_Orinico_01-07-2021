@@ -21,6 +21,11 @@ h1 {
   font-family: "MV Boli";
 }
 
+ 
+img{
+  min-width: 300px;
+  max-width: 300px;
+} 
 .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,7 +265,6 @@ main .products-container .products .product__infos {
   border-radius: 0 0 20px 20px;
   color: #dee9f7;
 }
-
 footer {
   background: #352208;
   display: -webkit-box;
@@ -293,17 +297,20 @@ footer .nav__link {
   font-size: 24px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1093px) {
+
+ 
   img{
-    min-width: 300px;
-    max-width: 300px;
-  }
+    min-width: 313px;
+    max-width: 313px;
+  } 
   main .products-container .products {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
   main .products-container .products .product__infos {
     font-size: 20px;
+    padding: 0 20px;
   }
 }
 
@@ -326,3 +333,8 @@ footer .nav__link {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 1190px) {
+
+  .product__infos{
+    max-height: 300px;
+  }
