@@ -13,11 +13,10 @@ h1 {
   font-family: "MV Boli";
 }
 
- 
-img{
+img {
   min-width: 300px;
   max-width: 300px;
-} 
+}
 .container {
   display: flex;
   align-items: center;
@@ -42,7 +41,7 @@ img{
 
 .nav__logo {
   color: #352208;
-  font-size: 27px;
+  font-size: 35px;
 }
 
 .nav__cart {
@@ -51,9 +50,8 @@ img{
   font-size: 30px;
 }
 
-
 .nav__cart__number {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
@@ -73,17 +71,17 @@ img{
 }
 
 .section_one {
- background-color:#ffdeb3;
- font-family: 'Raleway', sans-serif;
- color: black;
- justify-content: center;
- display: flex;
- text-align: center;
+  background-color: #ffdeb3;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  justify-content: center;
+  display: flex;
+  text-align: center;
 }
 
 .section_one_text {
   color: #000000;
-  font-family:fantasy Geneva, Tahoma, sans-serif;
+  font-family: fantasy Geneva, Tahoma, sans-serif;
   margin: 0 20px;
   display: flex;
   flex-direction: column;
@@ -93,7 +91,7 @@ img{
   max-width: 700px;
 }
 
-.section_one_h1 {
+.section_one_h2 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -102,10 +100,17 @@ img{
 }
 
 .section_one_p {
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
 }
-
+.section_one_p:hover {
+  cursor: pointer;
+  color: rgb(161, 165, 168);
+}
+.section_one_h1:hover {
+  cursor: pointer;
+  color: rgb(161, 165, 168);
+}
 main .section_two {
   background-color: #e1bb80;
   display: flex;
@@ -114,7 +119,7 @@ main .section_two {
   padding: 80px 0;
 }
 
-main .section_two_h2 {
+main .section_two_h3 {
   font-family: "MV Boli";
   font-size: 40px;
   margin-bottom: 50px;
@@ -204,12 +209,10 @@ footer .nav__link {
 }
 
 @media screen and (max-width: 1093px) {
-
- 
-  img{
+  img {
     min-width: 313px;
     max-width: 313px;
-  } 
+  }
   main .section_two .products {
     grid-template-columns: 1fr 1fr;
   }
@@ -220,12 +223,12 @@ footer .nav__link {
 }
 
 @media screen and (max-width: 600px) {
-  img{
+  img {
     min-width: 300px;
     max-width: 300px;
   }
   main .section_two .products {
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   main .section_two.products .product__infos {
     font-size: 20px;
@@ -238,16 +241,24 @@ footer .nav__link {
   }
 }
 
-  .product__infos{
-    max-height: 300px;
-  }
-  .fa-shopping-cart {
-    transform: scale(1.10);
-  }
-  .fa-shopping-cart:hover {
-    color: black;
-    font-size: 150%;
-    transform: rotate(20deg);
-    transition-duration: 0.2s;
- 
-  
+.product__infos {
+  max-height: 300px;
+}
+.fa-shopping-cart {
+  transform: scale(1.1);
+}
+.fa-shopping-cart:hover {
+  font-size: 150%;
+  transform: rotate(20deg);
+  transition-duration: 0.2s;
+}
+.section_one_h2:hover {
+  cursor: pointer;
+  color: rgb(161, 165, 168);
+}
+h1:hover {
+  text-transform: uppercase;
+}
+footer a:hover {
+  text-transform: uppercase;
+}
