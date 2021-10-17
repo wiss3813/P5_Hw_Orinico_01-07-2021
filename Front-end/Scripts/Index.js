@@ -7,8 +7,15 @@ function main() {
 // Récupérer les articles depuis l'API
 function getArticles() {
   fetch("http://localhost:8888/api/teddies")
-    .then(function (response) {
-      return response.json();
+    .then(function (res) {
+      return res.json();
+    })
+    .catch((error) => {
+      let section_two = document.querySelector(".section_two");
+      section_two.innerHTML =
+        "Nous n'avons pas réussi à afficher nos nounours. Avez vous bien lancé le serveur local (Port 8888) ? Si le problème persiste, contactez-nous.";
+      section_two.style.textAlign = "center";
+      section_two.style.padding = "225px 225px";
     })
 
     // Dispatcher les données de chaque produit (prix, nom...) dans le DOM
