@@ -226,3 +226,9 @@ h1:hover {
 footer a:hover {
   text-transform: uppercase;
 }
+.product-card__infos__button:hover {
+  transform: scale(1.02);
+  background-color: #7b6b43;
+  transition-duration: 0.1sec;
+  color: #7b6b43;
+}

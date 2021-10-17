@@ -21,8 +21,8 @@ function checkIf404() {
   window.addEventListener("error", (e) => {
       let container = document.querySelector(".container");
       container.innerHTML = `<p>Cette page n'existe pas. <a class="back-to-home" href="index.html">Retourner dans la boutique ?</a></p>`;
-      container.style.padding = "40vh 0";
-      container.style.fontSize = "26px";
+      container.style.padding = "0vh 0";
+      container.style.fontSize = "20px";
       let backToHomeLink = document.querySelector(".back-to-home");
       backToHomeLink.style.textDecoration = "underline";
     },
