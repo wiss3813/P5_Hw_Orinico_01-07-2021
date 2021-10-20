@@ -104,7 +104,6 @@ img {
   text-align: center;
 }
 .section_one_p:hover {
-  cursor: pointer;
   color: rgb(161, 165, 168);
 }
 .section_one_h1:hover {
@@ -253,7 +252,6 @@ footer .nav__link {
   transition-duration: 0.2s;
 }
 .section_one_h2:hover {
-  cursor: pointer;
   color: rgb(161, 165, 168);
 }
 h1:hover {
