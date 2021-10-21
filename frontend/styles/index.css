@@ -1,3 +1,11 @@
+*,
+::before ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Josefin sans";
   margin: 0;
@@ -14,6 +22,8 @@ h1 {
 }
 
 .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -24,6 +34,8 @@ h1 {
 
 .header-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -33,8 +45,14 @@ h1 {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 80%;
   padding: 17px 0;
@@ -53,12 +71,19 @@ h1 {
 
 .nav__cart:hover a {
   color: #613e0f;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .nav__cart__number {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 20px;
   position: absolute;
@@ -81,20 +106,34 @@ h1 {
 }
 
 .teddy-bear__bg {
-  background-image: url("/front-end/src/img/teddy-bear-wallpaper.jpg");
+  background-image: url("/frontend/src/img/teddy-bear-wallpaper.jpg");
   background-size: cover;
   height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
 .teddy-bear__bg__text-group {
   color: #dee9f7;
   margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   max-width: 700px;
@@ -115,9 +154,17 @@ h1 {
 
 main .products-container {
   background-color: #e1bb80;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: center;
   align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 80px 0;
 }
@@ -130,10 +177,16 @@ main .products-container h3 {
 }
 
 main .products-container .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: center;
   align-self: center;
   margin: 0 5%;
+  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -145,19 +198,28 @@ main .products-container .products {
 
 main .products-container .products .product {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   height: 100%;
   background: #e1bb80;
   border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);
   box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);
 }
 
 main .products-container .products .product:hover {
   -webkit-transform: scale(1.03, 1.03);
   transform: scale(1.03, 1.03);
+  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   opacity: 0.9;
 }
@@ -180,13 +242,19 @@ main .products-container .products .product__img img {
 main .products-container .products .product__infos {
   position: absolute;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 20%;
   width: 100%;
   padding: 0 20px;
   background: #613e0f;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 25px;
   border-radius: 0 0 20px 20px;
@@ -195,8 +263,13 @@ main .products-container .products .product__infos {
 
 footer {
   background: #352208;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
   height: 60px;
@@ -205,7 +278,11 @@ footer {
 footer .nav {
   max-width: 1700px;
   color: #dee9f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 80%;
   padding: 0 40px;
@@ -241,3 +318,4 @@ footer .nav__link {
     font-size: 20px;
   }
 }
+/*# sourceMappingURL=index.css.map */
