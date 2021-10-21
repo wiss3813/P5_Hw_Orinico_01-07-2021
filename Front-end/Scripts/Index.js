@@ -6,16 +6,16 @@ function main() {
 
 // Récupérer les articles depuis l'API
 function getArticles() {
-  fetch("http://localhost:8888/api/teddies")
+  fetch("http://localhost:3000/api/teddies")
     .then(function (res) {
       return res.json();
     })
     .catch((error) => {
-      let section_two = document.querySelector(".section_two");
-      section_two.innerHTML =
-        "Nous n'avons pas réussi à afficher nos nounours. Avez vous bien lancé le serveur local (Port 8888) ? Si le problème persiste, contactez-nous.";
-      section_two.style.textAlign = "center";
-      section_two.style.padding = "225px 225px";
+      let productsContainer = document.querySelector(".products-container");
+      productsContainer.innerHTML =
+        "Nous n'avons pas réussi à afficher nos nounours. Avez vous bien lancé le serveur local (Port 3000) ? <br>Si le problème persiste, contactez-nous.";
+      productsContainer.style.textAlign = "center";
+      productsContainer.style.padding = "30vh 0";
     })
 
     // Dispatcher les données de chaque produit (prix, nom...) dans le DOM
@@ -23,12 +23,12 @@ function getArticles() {
       const articles = resultatAPI;
       console.log(articles);
       for (let article in articles) {
-        let productCart = document.createElement("div");
-        document.querySelector(".products").appendChild(productCart);
+        let productCard = document.createElement("div");
+        document.querySelector(".products").appendChild(productCard);
         productCard.classList.add("product");
 
         let productLink = document.createElement("a");
-        productCart.appendChild(productLink);
+        productCard.appendChild(productLink);
         productLink.href = `product.html?id=${resultatAPI[article]._id}`;
         productLink.classList.add("stretched-link");
 
@@ -57,7 +57,7 @@ function getArticles() {
         resultatAPI[article].price = resultatAPI[article].price / 100;
         productInfoPrice.innerHTML = new Intl.NumberFormat("fr-FR", {
           style: "currency",
-          currency: "eur",
+          currency: "EUR",
         }).format(resultatAPI[article].price);
       }
     });
