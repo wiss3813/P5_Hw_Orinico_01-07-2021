@@ -1,0 +1,28 @@
+{
+  "name": "orinoco-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "12.19.0",
+    "npm": "6.14.8"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build": "set NODE_ENV='production'"
+  },
+  "author": "Benjamin Nedelec",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.8",
+    "mongoose-unique-validator": "^2.0.2",
+    "uuid": "^3.3.2"
+  }
+}
