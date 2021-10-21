@@ -18,7 +18,7 @@ function getArticles() {
       productsContainer.style.padding = "30vh 0";
     })
 
-    // Dispatcher les données de chaque produit (prix, nom...) dans le DOM
+    // Dispatcher les données de chaque produit (prix, nom...)
     .then(function (resultatAPI) {
       const articles = resultatAPI;
       console.log(articles);
