@@ -23,12 +23,12 @@ function getArticles() {
       const articles = resultatAPI;
       console.log(articles);
       for (let article in articles) {
-        let productCard = document.createElement("div");
-        document.querySelector(".products").appendChild(productCard);
+        let productCart = document.createElement("div");
+        document.querySelector(".products").appendChild(productCart);
         productCard.classList.add("product");
 
         let productLink = document.createElement("a");
-        productCard.appendChild(productLink);
+        productCart.appendChild(productLink);
         productLink.href = `product.html?id=${resultatAPI[article]._id}`;
         productLink.classList.add("stretched-link");
 
