@@ -1,16 +1,13 @@
-$primary-color: #352208;
-$secondary-color: #e1bb80;
-$tertiary-color: #7b6b43;
-$text-color: #dee9f7;
+$primary-color: rgb(26, 23, 23);
+$secondary-color: #63481f;
+$tertiary-color: rgb(216, 183, 171);
+$text-color: rgb(221, 218, 213);
 
 @mixin flex-center() {
   display: flex;
   justify-content: center;
   align-self: center;
 }
-
-
-
 body {
   font-family: "Josefin sans";
   margin: 0;
