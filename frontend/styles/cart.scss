@@ -87,11 +87,14 @@ h1 {
   @include flex-center;
   width: 100%;
   background: $tertiary-color;
+  height: 900px;
   .cart-card {
+    @include flex-center;
     overflow: hidden;
     margin: 50px 15px;
     display: none;
     width: 600px;
+    height: 600px;
     background: $text-color;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);

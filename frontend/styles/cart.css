@@ -114,13 +114,23 @@ h1 {
       align-self: center;
   width: 100%;
   background: #535150;
+  height: 900px;
 }
 
 .container .cart-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   overflow: hidden;
   margin: 50px 15px;
   display: none;
   width: 600px;
+  height: 600px;
   background: #b3b3b3;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);
