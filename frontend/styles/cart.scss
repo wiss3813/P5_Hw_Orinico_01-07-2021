@@ -1,7 +1,7 @@
-$primary-color: rgb(26, 23, 23);
-$secondary-color: rgb(100, 74, 35);
-$tertiary-color: rgb(156, 143, 138);
-$text-color: rgb(241, 235, 221);
+$primary-color: #201402;
+$secondary-color: #796e64;
+$tertiary-color: rgb(83, 81, 80);
+$text-color: rgb(179, 179, 179);
 
 @mixin flex-center() {
   display: flex;

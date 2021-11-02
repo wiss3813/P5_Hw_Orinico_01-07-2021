@@ -6,7 +6,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #1a1717;
+  color: #201402;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background: #644a23;
+  background: #796e64;
 }
 
 .header-container {
@@ -50,18 +50,18 @@ h1 {
 }
 
 .nav__logo {
-  color: #1a1717;
+  color: #201402;
   font-size: 30px;
 }
 
 .nav__cart {
   position: relative;
-  color: #1a1717;
+  color: #201402;
   font-size: 30px;
 }
 
 .nav__cart:hover a {
-  color: #352f2f;
+  color: #503205;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -80,8 +80,8 @@ h1 {
   position: absolute;
   padding: 5px 5px;
   height: 14px;
-  background-color: #9c8f8a;
-  color: #f1ebdd;
+  background-color: #535150;
+  color: #b3b3b3;
   top: -15px;
   right: -15px;
   border-radius: 200px;
@@ -103,7 +103,7 @@ h1 {
   -ms-flex-item-align: center;
       align-self: center;
   width: 100%;
-  background: #9c8f8a;
+  background: #535150;
 }
 
 .container .cart-card {
@@ -111,7 +111,7 @@ h1 {
   margin: 50px 15px;
   display: none;
   width: 600px;
-  background: #f1ebdd;
+  background: #b3b3b3;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);
           box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);
@@ -124,7 +124,7 @@ h1 {
 .container .cart-card__recap {
   margin: 10px 0 10px 10px;
   width: 90%;
-  background: #f1ebdd;
+  background: #b3b3b3;
 }
 
 .container .cart-card__recap__row {
@@ -191,7 +191,7 @@ h1 {
   width: 130px;
   padding: 20px;
   border-radius: 5px;
-  border: solid 1px #1a1717;
+  border: solid 1px #201402;
 }
 
 .container .cart-card__form {
@@ -209,7 +209,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #1a1717;
+  color: #201402;
   height: 100%;
 }
 
@@ -305,9 +305,9 @@ h1 {
 
 .container .cart-card__form .cart-card__form__button {
   padding: 20px;
-  background: #644a23;
+  background: #796e64;
   border-radius: 5px;
-  border: solid 1px #1a1717;
+  border: solid 1px #201402;
 }
 
 .container .cart-card__form .erreur {
@@ -432,7 +432,7 @@ h1 {
 }
 
 footer {
-  background: #1a1717;
+  background: #201402;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,7 +447,7 @@ footer {
 
 footer .nav {
   max-width: 1700px;
-  color: #f1ebdd;
+  color: #b3b3b3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +459,7 @@ footer .nav {
 }
 
 footer .nav__link {
-  color: #f1ebdd;
+  color: #b3b3b3;
   font-size: 24px;
 }
 
