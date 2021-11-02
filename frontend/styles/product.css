@@ -68,7 +68,7 @@ h1 {
   font-size: 30px;
 }
 
-.nav__cart:hover a {
+.nav__cart:hover {
   color: #503205;
   -webkit-transition: 0.3s;
   transition: 0.3s;

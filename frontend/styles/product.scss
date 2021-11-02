@@ -56,7 +56,7 @@ h1 {
     position: relative;
     color: $primary-color;
     font-size: 30px;
-    &:hover a {
+    &:hover  {
       color: lighten($primary-color, 10%);
       transition: 0.3s;
       transform: scale(1.03);
