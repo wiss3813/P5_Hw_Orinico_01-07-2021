@@ -183,7 +183,7 @@ footer .nav__link {
   font-size: 24px;
 }
 
-footer .nav__link:hover a {
+footer .nav__link:hover {
   text-transform: uppercase;
 }
 
