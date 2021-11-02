@@ -201,6 +201,9 @@ footer {
     &__link {
       color: $text-color;
       font-size: 24px;
+      &:hover {
+        text-transform: uppercase;
+      }
     }
   }
 }

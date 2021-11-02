@@ -54,6 +54,14 @@ h1 {
   font-size: 30px;
 }
 
+.nav__logo:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  color: #805008;
+}
+
 .nav__cart {
   position: relative;
   color: #201402;
@@ -64,6 +72,9 @@ h1 {
   color: #503205;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  font-size: 35px;
 }
 
 .nav__cart__number {
@@ -242,6 +253,10 @@ footer .nav {
 footer .nav__link {
   color: #b3b3b3;
   font-size: 24px;
+}
+
+footer .nav__link:hover {
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {

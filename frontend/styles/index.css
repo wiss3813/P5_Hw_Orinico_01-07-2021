@@ -297,6 +297,10 @@ footer .nav__link {
   font-size: 24px;
 }
 
+footer .nav__link:hover {
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1100px) {
   main .products-container .products {
     -ms-grid-columns: 1fr 1fr;

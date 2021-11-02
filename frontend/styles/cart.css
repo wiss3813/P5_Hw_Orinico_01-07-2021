@@ -36,6 +36,14 @@ h1 {
       align-self: center;
 }
 
+.header-container:hover a {
+  color: #503205;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,16 +62,18 @@ h1 {
   font-size: 30px;
 }
 
+.nav__logo.nav__logo:hover {
+  color: #805008;
+}
+
 .nav__cart {
   position: relative;
   color: #201402;
   font-size: 30px;
 }
 
-.nav__cart:hover a {
+.nav__cart.fa-shopping-cart:hover {
   color: #503205;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .nav__cart__number {
@@ -474,6 +484,10 @@ footer .nav__link {
   font-size: 24px;
 }
 
+footer .nav__link :hover {
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 530px) {
   .cart-card {
     height: 750px;
@@ -524,6 +538,9 @@ footer .nav__link {
   }
   footer .nav__link {
     font-size: 20px;
+  }
+  footer .nav__link:hover {
+    text-transform: uppercase;
   }
 }
 /*# sourceMappingURL=cart.css.map */

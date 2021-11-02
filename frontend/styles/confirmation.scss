@@ -35,6 +35,7 @@ h1 {
 .header-container {
   width: 100%;
   @include flex-center;
+  
 }
 
 .nav {
@@ -45,15 +46,20 @@ h1 {
   &__logo {
     color: $primary-color;
     font-size: 30px;
+    &:hover  {
+      color: lighten($primary-color, 10%);
+      
+    }
   }
   &__cart {
     position: relative;
     color: $primary-color;
     font-size: 30px;
-    &:hover a {
+    &:hover a  {
       color: lighten($primary-color, 10%);
-      transition: 0.3s;
+      
     }
+  
     &__number {
       display: inline-flex;
       justify-content: center;
@@ -122,6 +128,9 @@ footer {
     &__link {
       color: $text-color;
       font-size: 24px;
+      &:hover a {
+        text-transform: uppercase;
+      }
     }
   }
 }
