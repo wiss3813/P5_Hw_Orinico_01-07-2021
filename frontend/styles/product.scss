@@ -128,12 +128,18 @@ h1 {
       }
       .product-card__infos__button {
         padding: 20px;
-        background: $secondary-color;
+        background: rgb(5, 133, 5);
         border-radius: 5px;
         border: solid 1px $primary-color;
+        &:hover {
+          background-color: lighten($color: rgb(5, 133, 5), $amount: 10);
+        }
       }
       .back-to-home {
-        background: #d8d8d8;
+        background-color: rgb(194, 70, 70);
+        &:hover {
+          background-color: lighten($color: rgb(194, 70, 70), $amount: 10);
+        }
       }
     }
     &__img {

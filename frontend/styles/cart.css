@@ -196,6 +196,10 @@ h1 {
   border: solid 1px #201402;
 }
 
+.container .cart-card__recap .cart-card__form__button:hover {
+  background-color: #cf6c6c;
+}
+
 .container .cart-card__form {
   width: 100%;
   display: -webkit-box;
@@ -311,6 +315,10 @@ h1 {
   border-radius: 5px;
   border: solid 1px #201402;
   font-weight: bolder;
+}
+
+.container .cart-card__form .cart-card__form__button:hover {
+  background-color: #07b607;
 }
 
 .container .cart-card__form .erreur {

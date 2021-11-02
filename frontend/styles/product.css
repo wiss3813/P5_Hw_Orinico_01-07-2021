@@ -177,13 +177,21 @@ h1 {
 
 .container .product-card__infos .product-card__infos__button {
   padding: 20px;
-  background: #796e64;
+  background: #058505;
   border-radius: 5px;
   border: solid 1px #201402;
 }
 
+.container .product-card__infos .product-card__infos__button:hover {
+  background-color: #07b607;
+}
+
 .container .product-card__infos .back-to-home {
-  background: #d8d8d8;
+  background-color: #c24646;
+}
+
+.container .product-card__infos .back-to-home:hover {
+  background-color: #cf6c6c;
 }
 
 .container .product-card__img {

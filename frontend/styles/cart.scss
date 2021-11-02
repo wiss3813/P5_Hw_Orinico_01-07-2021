@@ -131,6 +131,9 @@ h1 {
         background-color: rgb(194, 70, 70);
         font-weight: bolder;
         border: solid 1px $primary-color;
+        &:hover {
+          background-color: lighten($color: rgb(194, 70, 70), $amount: 10);
+        }
       }
     }
     &__form {
@@ -200,6 +203,9 @@ h1 {
         border-radius: 5px;
         border: solid 1px $primary-color;
         font-weight: bolder;
+        &:hover {
+          background-color: lighten($color: rgb(5, 133, 5), $amount: 10);
+        }
       }
 
       .erreur {
