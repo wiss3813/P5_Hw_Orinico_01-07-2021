@@ -1,13 +1,14 @@
-$primary-color: rgb(26, 23, 23);
-$secondary-color: #63481f;
-$tertiary-color: rgb(216, 183, 171);
+$primary-color: #63481f;
+$secondary-color: #817769;
+$tertiary-color: rgb(185, 173, 169);
 $text-color: rgb(221, 218, 213);
 
 @mixin flex-center() {
   display: flex;
   justify-content: center;
   align-self: center;
-}
+} 
+
 body {
   font-family: "Josefin sans";
   margin: 0;
@@ -52,6 +53,8 @@ h1 {
     &:hover a {
       color: lighten($primary-color, 10%);
       transition: 0.3s;
+      transform: scale(1.03);
+      
     }
     &__number {
       display: inline-flex;
@@ -107,7 +110,7 @@ h1 {
 
 main {
   .products-container {
-    background-color: $secondary-color;
+    background-color:$tertiary-color;
     @include flex-center;
     flex-direction: column;
     padding: 80px 0;
