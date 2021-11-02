@@ -9,12 +9,7 @@ $text-color: #dee9f7;
   align-self: center;
 }
 
-*,
-::before ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 body {
   font-family: "Josefin sans";
@@ -85,7 +80,7 @@ h1 {
 .teddy-bear {
   max-width: 700px;
   &__bg {
-    background-image: url("/front-end/src/img/teddy-bear-wallpaper.jpg");
+    background-image: url("/frontend/src/img/teddy-bear-wallpaper.jpg");
     background-size: cover;
     height: 50vh;
     @include flex-center;
