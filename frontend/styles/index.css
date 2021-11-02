@@ -6,11 +6,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #63481f;
+  color: #201402;
 }
 
 h1 {
   font-family: "MV Boli";
+  font-weight: 25px;
 }
 
 .container-fluid {
@@ -21,7 +22,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background: #817769;
+  background: #796e64;
 }
 
 .header-container {
@@ -51,18 +52,27 @@ h1 {
 }
 
 .nav__logo {
-  color: #63481f;
+  color: #201402;
   font-size: 27px;
+}
+
+.nav__logo:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  color: #805008;
+  font-size: 25px;
 }
 
 .nav__cart {
   position: relative;
-  color: #63481f;
+  color: #201402;
   font-size: 30px;
 }
 
 .nav__cart:hover a {
-  color: #8a642b;
+  color: #503205;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scale(1.03);
@@ -82,8 +92,8 @@ h1 {
   font-size: 20px;
   position: absolute;
   padding: 0px 10px;
-  background-color: #b9ada9;
-  color: #dddad5;
+  background-color: #535150;
+  color: #b3b3b3;
   top: -15px;
   right: -15px;
   border-radius: 200px;
@@ -114,7 +124,7 @@ h1 {
 }
 
 .teddy-bear__bg__text-group {
-  color: #dddad5;
+  color: #b3b3b3;
   margin: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +157,7 @@ h1 {
 }
 
 main .products-container {
-  background-color: #b9ada9;
+  background-color: #535150;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,6 +201,7 @@ main .products-container .products {
 }
 
 main .products-container .products .product {
+  background-color: #535150;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,7 +215,6 @@ main .products-container .products .product {
           justify-content: space-between;
   width: 100%;
   height: 100%;
-  background: #817769;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);
           box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.49);
@@ -221,7 +231,7 @@ main .products-container .products .product:hover {
 main .products-container .products .product__img {
   width: 100%;
   height: 100%;
-  background: coral;
+  background: #a8948c;
   border-radius: 20px 20px 0 0;
 }
 
@@ -245,18 +255,18 @@ main .products-container .products .product__infos {
   height: 20%;
   width: 100%;
   padding: 0 20px;
-  background: #8a642b;
+  background: #332f2a;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 25px;
   border-radius: 0 0 20px 20px;
-  color: #dddad5;
+  color: #b3b3b3;
 }
 
 footer {
-  background: #63481f;
+  background-color: #796e64;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +281,7 @@ footer {
 
 footer .nav {
   max-width: 1700px;
-  color: #dddad5;
+  color: #b3b3b3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +293,7 @@ footer .nav {
 }
 
 footer .nav__link {
-  color: #dddad5;
+  color: #b3b3b3;
   font-size: 24px;
 }
 
