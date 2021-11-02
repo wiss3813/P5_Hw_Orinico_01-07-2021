@@ -191,6 +191,8 @@ h1 {
   width: 130px;
   padding: 20px;
   border-radius: 5px;
+  background-color: #c24646;
+  font-weight: bolder;
   border: solid 1px #201402;
 }
 
@@ -305,9 +307,10 @@ h1 {
 
 .container .cart-card__form .cart-card__form__button {
   padding: 20px;
-  background: #796e64;
+  background: #058505;
   border-radius: 5px;
   border: solid 1px #201402;
+  font-weight: bolder;
 }
 
 .container .cart-card__form .erreur {

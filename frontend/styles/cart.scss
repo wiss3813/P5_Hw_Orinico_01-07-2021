@@ -128,6 +128,8 @@ h1 {
         width: 130px;
         padding: 20px;
         border-radius: 5px;
+        background-color: rgb(194, 70, 70);
+        font-weight: bolder;
         border: solid 1px $primary-color;
       }
     }
@@ -194,9 +196,10 @@ h1 {
       }
       .cart-card__form__button {
         padding: 20px;
-        background: $secondary-color;
+        background: rgb(5, 133, 5);
         border-radius: 5px;
         border: solid 1px $primary-color;
+        font-weight: bolder;
       }
 
       .erreur {
